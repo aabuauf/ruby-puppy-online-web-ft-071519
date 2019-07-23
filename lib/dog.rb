@@ -1,7 +1,7 @@
 # Add your code here
 class Dog
 @@all=[]
-  def initialize
+  def initialize 
     @all.push(self)
   end
   
