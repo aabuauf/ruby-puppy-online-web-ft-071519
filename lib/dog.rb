@@ -1,10 +1,14 @@
 # Add your code here
 class Dog
 @@all=[]
-  def initialize(name) 
+  def initialize(name)
+    @name= name
     @@all<< self
   end
   
+  def name
+    @name
+  end
   
   def self.all
     @@all
@@ -14,6 +18,6 @@ class Dog
     @@all.clear
   end
   def self.print_all
-    @@all.each {|e| puts e}
+    @@all.each {|e| puts e.name}
   end
 end
